@@ -31,7 +31,7 @@ with dataExploration:
     st.header('Dataset: Wisconsin cancer dataset')
     st.text('I found this dataset at Kaggle ')
 
-df_data = pd.read_csv("/Users/sandeepvemulapalli/Downloads/data 2.csv")
+df_data = pd.read_csv("https://raw.githubusercontent.com/sandy1597/CMSE_830/main/data%202.csv")
 print(df_data)
 #choosing option-1 from the dropdown
 
