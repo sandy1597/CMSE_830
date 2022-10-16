@@ -17,7 +17,7 @@ with dataExploration:
     st.text('I found this dataset at GlobalNutrition.org ')
 
 
-xls = pd.read_excel('https://github.com/sandy1597/CMSE_830/blob/main/nutrition.xlsx')
+xls = pd.read_excel('https://github.com/sandy1597/CMSE_830/blob/main/nutrition.xlsx',engine='xlrd')
 xls_1=xls.loc[:, ['iso3', 'country','disaggregation','disagg.value','region','adult_anaemia_2000','adult_anaemia_2005','adult_anaemia_2010','adult_anaemia_2019']]
 xls_1=xls_1.where(xls_1['disaggregation']=='pregnancy').dropna()
 #print(xls_2)
