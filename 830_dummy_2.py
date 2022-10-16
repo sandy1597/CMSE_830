@@ -47,7 +47,7 @@ disease_plots = st.radio(
     ('Obesity','Anaemia','Diabetes'))
 
 if(disease_plots=='Anaemia'):
-     print(xls_1)
+     #print(xls_1)
      selected_option_1= st.selectbox("Which attribute do you want to select for x?", xls_1.columns)
      st.write('You selected:', selected_option_1)
 
@@ -66,7 +66,7 @@ if(disease_plots=='Anaemia'):
 
 
 elif(disease_plots=='Obesity'):
-    print(obes)
+    #print(obes)
     disease_obesity = st.radio(
         "Select the type of gender:",
         ('Male','Female'))
